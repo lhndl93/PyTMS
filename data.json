@@ -1,0 +1,824 @@
+{
+    "jobs": [
+        {
+            "id": "1",
+            "destination": "London",
+            "customer": "Customer1",
+            "pallets": 10,
+            "weight": 200,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "08:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "10:00",
+            "stackable": true,
+            "status": "collection"
+        },
+        {
+            "id": "2",
+            "destination": "Manchester",
+            "customer": "Customer2",
+            "pallets": 5,
+            "weight": 100,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "09:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "11:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "3",
+            "destination": "Birmingham",
+            "customer": "Customer3",
+            "pallets": 20,
+            "weight": 400,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "10:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "12:00",
+            "stackable": true,
+            "status": "delivery"
+        },
+        {
+            "id": "4",
+            "destination": "Leeds",
+            "customer": "Customer4",
+            "pallets": 15,
+            "weight": 300,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "11:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "13:00",
+            "stackable": true,
+            "status": "done"
+        },
+        {
+            "id": "5",
+            "destination": "Glasgow",
+            "customer": "Customer5",
+            "pallets": 8,
+            "weight": 160,
+            "collection_date": "2024-01-01",
+            "collection_time": "12:00",
+            "delivery_date": "2024-06-28",
+            "delivery_time": "14:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "6",
+            "destination": "Bristol",
+            "customer": "Customer6",
+            "pallets": 12,
+            "weight": 240,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "13:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "15:00",
+            "stackable": true,
+            "status": "delivery"
+        },
+        {
+            "id": "7",
+            "destination": "Sheffield",
+            "customer": "Customer7",
+            "pallets": 18,
+            "weight": 360,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "14:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "16:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "8",
+            "destination": "Edinburgh",
+            "customer": "Customer8",
+            "pallets": 6,
+            "weight": 120,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "15:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "17:00",
+            "stackable": true,
+            "status": "delivery"
+        },
+        {
+            "id": "9",
+            "destination": "Liverpool",
+            "customer": "Customer9",
+            "pallets": 22,
+            "weight": 440,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "16:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "18:00",
+            "stackable": true,
+            "status": "done"
+        },
+        {
+            "id": "10",
+            "destination": "Newcastle",
+            "customer": "Customer10",
+            "pallets": 14,
+            "weight": 280,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "17:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "19:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "11",
+            "destination": "London",
+            "customer": "Customer11",
+            "pallets": 16,
+            "weight": 320,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "08:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "10:00",
+            "stackable": true,
+            "status": "collection"
+        },
+        {
+            "id": "12",
+            "destination": "Manchester",
+            "customer": "Customer12",
+            "pallets": 7,
+            "weight": 140,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "09:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "11:00",
+            "stackable": false,
+            "status": "delivery"
+        },
+        {
+            "id": "13",
+            "destination": "Birmingham",
+            "customer": "Customer13",
+            "pallets": 13,
+            "weight": 260,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "10:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "12:00",
+            "stackable": true,
+            "status": "collection"
+        },
+        {
+            "id": "14",
+            "destination": "Leeds",
+            "customer": "Customer14",
+            "pallets": 9,
+            "weight": 180,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "11:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "13:00",
+            "stackable": false,
+            "status": "done"
+        },
+        {
+            "id": "15",
+            "destination": "Glasgow",
+            "customer": "Customer15",
+            "pallets": 11,
+            "weight": 220,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "12:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "14:00",
+            "stackable": true,
+            "status": "collection"
+        },
+        {
+            "id": "16",
+            "destination": "Bristol",
+            "customer": "Customer16",
+            "pallets": 17,
+            "weight": 340,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "13:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "15:00",
+            "stackable": false,
+            "status": "delivery"
+        },
+        {
+            "id": "17",
+            "destination": "Sheffield",
+            "customer": "Customer17",
+            "pallets": 4,
+            "weight": 80,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "14:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "16:00",
+            "stackable": true,
+            "status": "done"
+        },
+        {
+            "id": "18",
+            "destination": "Edinburgh",
+            "customer": "Customer18",
+            "pallets": 19,
+            "weight": 380,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "15:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "17:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "19",
+            "destination": "Liverpool",
+            "customer": "Customer19",
+            "pallets": 3,
+            "weight": 60,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "16:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "18:00",
+            "stackable": true,
+            "status": "delivery"
+        },
+        {
+            "id": "20",
+            "destination": "Newcastle",
+            "customer": "Customer20",
+            "pallets": 21,
+            "weight": 420,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "17:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "19:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "21",
+            "destination": "London",
+            "customer": "Customer21",
+            "pallets": 25,
+            "weight": 500,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "08:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "10:00",
+            "stackable": true,
+            "status": "done"
+        },
+        {
+            "id": "22",
+            "destination": "Manchester",
+            "customer": "Customer22",
+            "pallets": 2,
+            "weight": 40,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "09:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "11:00",
+            "stackable": false,
+            "status": "collection"
+        },
+        {
+            "id": "23",
+            "destination": "Birmingham",
+            "customer": "Customer23",
+            "pallets": 24,
+            "weight": 480,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "10:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "12:00",
+            "stackable": true,
+            "status": "collection"
+        },
+        {
+            "id": "24",
+            "destination": "Leeds",
+            "customer": "Customer24",
+            "pallets": 1,
+            "weight": 20,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "11:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "13:00",
+            "stackable": false,
+            "status": "delivery"
+        },
+        {
+            "id": "25",
+            "destination": "Glasgow",
+            "customer": "Customer25",
+            "pallets": 23,
+            "weight": 460,
+            "collection_date": "2024-01-01 00:00:00",
+            "collection_time": "12:00",
+            "delivery_date": "2024-01-02 00:00:00",
+            "delivery_time": "14:00",
+            "stackable": true,
+            "status": "collection"
+        }
+    ],
+    "customers": [
+        {
+            "id": "1",
+            "name": "Customer1",
+            "contact": "John Doe",
+            "email": "customer1@example.com",
+            "address": "123 Main St, London"
+        },
+        {
+            "id": "2",
+            "name": "Customer2",
+            "contact": "Jane Smith",
+            "email": "customer2@example.com",
+            "address": "456 Elm St, Manchester"
+        },
+        {
+            "id": "3",
+            "name": "Customer3",
+            "contact": "Bob Johnson",
+            "email": "customer3@example.com",
+            "address": "789 Oak St, Birmingham"
+        },
+        {
+            "id": "4",
+            "name": "Customer4",
+            "contact": "Alice Davis",
+            "email": "customer4@example.com",
+            "address": "101 Maple St, Leeds"
+        },
+        {
+            "id": "5",
+            "name": "Customer5",
+            "contact": "Chris Brown",
+            "email": "customer5@example.com",
+            "address": "202 Pine St, Glasgow"
+        },
+        {
+            "id": "6",
+            "name": "Customer6",
+            "contact": "Karen White",
+            "email": "customer6@example.com",
+            "address": "303 Cedar St, Bristol"
+        },
+        {
+            "id": "7",
+            "name": "Customer7",
+            "contact": "James Wilson",
+            "email": "customer7@example.com",
+            "address": "404 Birch St, Sheffield"
+        },
+        {
+            "id": "8",
+            "name": "Customer8",
+            "contact": "Patricia Taylor",
+            "email": "customer8@example.com",
+            "address": "505 Walnut St, Edinburgh"
+        },
+        {
+            "id": "9",
+            "name": "Customer9",
+            "contact": "Michael Moore",
+            "email": "customer9@example.com",
+            "address": "606 Cherry St, Liverpool"
+        },
+        {
+            "id": "10",
+            "name": "Customer10",
+            "contact": "Linda Martin",
+            "email": "customer10@example.com",
+            "address": "707 Ash St, Newcastle"
+        },
+        {
+            "id": "11",
+            "name": "Customer11",
+            "contact": "David Clark",
+            "email": "customer11@example.com",
+            "address": "808 Redwood St, London"
+        },
+        {
+            "id": "12",
+            "name": "Customer12",
+            "contact": "Susan Rodriguez",
+            "email": "customer12@example.com",
+            "address": "909 Spruce St, Manchester"
+        },
+        {
+            "id": "13",
+            "name": "Customer13",
+            "contact": "Robert Lewis",
+            "email": "customer13@example.com",
+            "address": "1010 Fir St, Birmingham"
+        },
+        {
+            "id": "14",
+            "name": "Customer14",
+            "contact": "Lisa Walker",
+            "email": "customer14@example.com",
+            "address": "1111 Hickory St, Leeds"
+        },
+        {
+            "id": "15",
+            "name": "Customer15",
+            "contact": "Charles Hall",
+            "email": "customer15@example.com",
+            "address": "1212 Cypress St, Glasgow"
+        },
+        {
+            "id": "16",
+            "name": "Customer16",
+            "contact": "Nancy Allen",
+            "email": "customer16@example.com",
+            "address": "1313 Chestnut St, Bristol"
+        },
+        {
+            "id": "17",
+            "name": "Customer17",
+            "contact": "Daniel Young",
+            "email": "customer17@example.com",
+            "address": "1414 Willow St, Sheffield"
+        },
+        {
+            "id": "18",
+            "name": "Customer18",
+            "contact": "Karen Hernandez",
+            "email": "customer18@example.com",
+            "address": "1515 Dogwood St, Edinburgh"
+        },
+        {
+            "id": "19",
+            "name": "Customer19",
+            "contact": "William King",
+            "email": "customer19@example.com",
+            "address": "1616 Sycamore St, Liverpool"
+        },
+        {
+            "id": "20",
+            "name": "Customer20",
+            "contact": "Patricia Wright",
+            "email": "customer20@example.com",
+            "address": "1717 Magnolia St, Newcastle"
+        },
+        {
+            "id": "21",
+            "name": "Customer21",
+            "contact": "John Green",
+            "email": "customer21@example.com",
+            "address": "1818 Poplar St, London"
+        },
+        {
+            "id": "22",
+            "name": "Customer22",
+            "contact": "Laura Adams",
+            "email": "customer22@example.com",
+            "address": "1919 Olive St, Manchester"
+        },
+        {
+            "id": "23",
+            "name": "Customer23",
+            "contact": "Kevin Baker",
+            "email": "customer23@example.com",
+            "address": "2020 Palm St, Birmingham"
+        },
+        {
+            "id": "24",
+            "name": "Customer24",
+            "contact": "Sandra Nelson",
+            "email": "customer24@example.com",
+            "address": "2121 Aspen St, Leeds"
+        },
+        {
+            "id": "25",
+            "name": "Customer25",
+            "contact": "Richard Scott",
+            "email": "customer25@example.com",
+            "address": "2222 Beech St, Glasgow"
+        }
+    ],
+    "vehicles": [
+        {
+            "id": "1",
+            "model": "Model1",
+            "license_plate": "ABC123",
+            "driver": "Driver1"
+        },
+        {
+            "id": "2",
+            "model": "Model2",
+            "license_plate": "DEF456",
+            "driver": "Driver2"
+        },
+        {
+            "id": "3",
+            "model": "Model3",
+            "license_plate": "GHI789",
+            "driver": "Driver3"
+        },
+        {
+            "id": "4",
+            "model": "Model4",
+            "license_plate": "JKL012",
+            "driver": "Driver4"
+        },
+        {
+            "id": "5",
+            "model": "Model5",
+            "license_plate": "MNO345",
+            "driver": "Driver5"
+        },
+        {
+            "id": "6",
+            "model": "Model6",
+            "license_plate": "PQR678",
+            "driver": "Driver6"
+        },
+        {
+            "id": "7",
+            "model": "Model7",
+            "license_plate": "STU901",
+            "driver": "Driver7"
+        },
+        {
+            "id": "8",
+            "model": "Model8",
+            "license_plate": "VWX234",
+            "driver": "Driver8"
+        },
+        {
+            "id": "9",
+            "model": "Model9",
+            "license_plate": "YZA567",
+            "driver": "Driver9"
+        },
+        {
+            "id": "10",
+            "model": "Model10",
+            "license_plate": "BCD890",
+            "driver": "Driver10"
+        },
+        {
+            "id": "11",
+            "model": "Model11",
+            "license_plate": "CDE123",
+            "driver": "Driver11"
+        },
+        {
+            "id": "12",
+            "model": "Model12",
+            "license_plate": "EFG456",
+            "driver": "Driver12"
+        },
+        {
+            "id": "13",
+            "model": "Model13",
+            "license_plate": "HIJ789",
+            "driver": "Driver13"
+        },
+        {
+            "id": "14",
+            "model": "Model14",
+            "license_plate": "KLM012",
+            "driver": "Driver14"
+        },
+        {
+            "id": "15",
+            "model": "Model15",
+            "license_plate": "NOP345",
+            "driver": "Driver15"
+        },
+        {
+            "id": "16",
+            "model": "Model16",
+            "license_plate": "QRS678",
+            "driver": "Driver16"
+        },
+        {
+            "id": "17",
+            "model": "Model17",
+            "license_plate": "TUV901",
+            "driver": "Driver17"
+        },
+        {
+            "id": "18",
+            "model": "Model18",
+            "license_plate": "WXY234",
+            "driver": "Driver18"
+        },
+        {
+            "id": "19",
+            "model": "Model19",
+            "license_plate": "ZAB567",
+            "driver": "Driver19"
+        },
+        {
+            "id": "20",
+            "model": "Model20",
+            "license_plate": "CDE890",
+            "driver": "Driver20"
+        }
+    ],
+    "drivers": [
+        {
+            "id": "1",
+            "name": "Driver1",
+            "license_number": "DL123456"
+        },
+        {
+            "id": "2",
+            "name": "Driver2",
+            "license_number": "DL123457"
+        },
+        {
+            "id": "3",
+            "name": "Driver3",
+            "license_number": "DL123458"
+        },
+        {
+            "id": "4",
+            "name": "Driver4",
+            "license_number": "DL123459"
+        },
+        {
+            "id": "5",
+            "name": "Driver5",
+            "license_number": "DL123460"
+        },
+        {
+            "id": "6",
+            "name": "Driver6",
+            "license_number": "DL123461"
+        },
+        {
+            "id": "7",
+            "name": "Driver7",
+            "license_number": "DL123462"
+        },
+        {
+            "id": "8",
+            "name": "Driver8",
+            "license_number": "DL123463"
+        },
+        {
+            "id": "9",
+            "name": "Driver9",
+            "license_number": "DL123464"
+        },
+        {
+            "id": "10",
+            "name": "Driver10",
+            "license_number": "DL123465"
+        },
+        {
+            "id": "11",
+            "name": "Driver11",
+            "license_number": "DL123466"
+        },
+        {
+            "id": "12",
+            "name": "Driver12",
+            "license_number": "DL123467"
+        },
+        {
+            "id": "13",
+            "name": "Driver13",
+            "license_number": "DL123468"
+        },
+        {
+            "id": "14",
+            "name": "Driver14",
+            "license_number": "DL123469"
+        },
+        {
+            "id": "15",
+            "name": "Driver15",
+            "license_number": "DL123470"
+        },
+        {
+            "id": "16",
+            "name": "Driver16",
+            "license_number": "DL123471"
+        },
+        {
+            "id": "17",
+            "name": "Driver17",
+            "license_number": "DL123472"
+        },
+        {
+            "id": "18",
+            "name": "Driver18",
+            "license_number": "DL123473"
+        },
+        {
+            "id": "19",
+            "name": "Driver19",
+            "license_number": "DL123474"
+        },
+        {
+            "id": "20",
+            "name": "Driver20",
+            "license_number": "DL123475"
+        },
+        {
+            "id": "21",
+            "name": "Driver21",
+            "license_number": "DL123476"
+        },
+        {
+            "id": "22",
+            "name": "Driver22",
+            "license_number": "DL123477"
+        },
+        {
+            "id": "23",
+            "name": "Driver23",
+            "license_number": "DL123478"
+        },
+        {
+            "id": "24",
+            "name": "Driver24",
+            "license_number": "DL123479"
+        },
+        {
+            "id": "25",
+            "name": "Driver25",
+            "license_number": "DL123480"
+        }
+    ],
+    "edited_jobs": {
+        "5": [
+            {
+                "old": {
+                    "id": "5",
+                    "destination": "Glasgow",
+                    "customer": "Customer5",
+                    "pallets": 8,
+                    "weight": 160,
+                    "collection_date": "2024-01-01 00:00:00",
+                    "collection_time": "12:00",
+                    "delivery_date": "2024-01-02 00:00:00",
+                    "delivery_time": "14:00",
+                    "stackable": false,
+                    "status": "collection"
+                },
+                "new": {
+                    "id": "5",
+                    "destination": "Glasgow",
+                    "customer": "Customer5",
+                    "pallets": 8,
+                    "weight": 160,
+                    "collection_date": "2024-01-01",
+                    "collection_time": "12:00",
+                    "delivery_date": "2024-06-28",
+                    "delivery_time": "14:00",
+                    "stackable": false,
+                    "status": "collection"
+                },
+                "timestamp": "24-06-2024 16:37:44"
+            }
+        ]
+    },
+    "edited_vehicles": {},
+    "edited_drivers": {},
+    "settings": {
+        "date_format": "dd/MM/yyyy",
+        "job_order": [
+            "id",
+            "destination",
+            "customer",
+            "pallets",
+            "weight",
+            "collection_date",
+            "collection_time",
+            "delivery_date",
+            "delivery_time",
+            "stackable",
+            "status"
+        ],
+        "customer_order": [
+            "id",
+            "name",
+            "contact",
+            "email",
+            "address"
+        ],
+        "vehicle_order": [
+            "id",
+            "model",
+            "license_plate",
+            "driver"
+        ],
+        "driver_order": [
+            "id",
+            "name",
+            "license_number"
+        ]
+    }
+}
