@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 from tkinter import messagebox
-import tkinter.filedialog as fd
 from datetime import datetime
 from data_store import DataStore
 
@@ -74,7 +73,6 @@ class MainApp:
 
         ttk.Button(bottom_frame, text="Settings", command=self.settings_window).pack(side='left', padx=5, pady=5)
         ttk.Button(bottom_frame, text="Export to CSV", command=self.export_to_csv).pack(side='left', padx=5, pady=5)
-        ttk.Button(bottom_frame, text="Import", command=self.import_window).pack(side='left', padx=5, pady=5)
         ttk.Button(bottom_frame, text="Exit", command=self.root.quit).pack(side='left', padx=5, pady=5)
 
         # Context Menu
@@ -90,7 +88,7 @@ class MainApp:
         status_filter = self.status_filter_var.get()
         today = datetime.now().date()
         for job in self.data_store.jobs:
-            collection_date = job['collection_date'].date()
+            collection_date = job['collection_date']
             if status_filter == "All" or job['status'] == status_filter:
                 if collection_date == today:
                     tag = 'due_today'
@@ -193,13 +191,6 @@ class MainApp:
         from .export_csv_window import ExportCSVWindow
         ExportCSVWindow(self)
 
-    def import_window(self):
-        if "import" in self.open_windows:
-            self.open_windows["import"].lift()
-            return
-        from .import_window import ImportWindow
-        ImportWindow(self)
-
     def search_window(self):
         if "search" in self.open_windows:
             self.open_windows["search"].lift()
@@ -247,13 +238,6 @@ class MainApp:
             return
         from .assign_driver_window import AssignDriverWindow
         AssignDriverWindow(self)
-
-    def load_jobs_from_csv(self):
-        csv_file = fd.askopenfilename(filetypes=[("CSV files", "*.csv"), ("All files", "*.*")])
-        if csv_file:
-            self.data_store.load_jobs_from_csv(csv_file)
-            self.refresh_jobs_list()
-            messagebox.showinfo("Success", "Jobs loaded successfully")
 
     def refresh_all_views(self):
         self.refresh_jobs_list()
